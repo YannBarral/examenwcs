@@ -1,0 +1,8 @@
+rag_home:
+    path:      /page
+    defaults:  { _controller: FruitBundle:First:index }
+
+
+fruit_homepage:
+    path:     /BonnePoire
+    defaults: { _controller: FruitBundle:Default:index }
