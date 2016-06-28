@@ -1,4 +1,4 @@
-imports:
+mports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
@@ -42,7 +42,7 @@ doctrine:
         driver:   pdo_mysql
         host:     "%database_host%"
         port:     "%database_port%"
-        dbname:   "%database_name%"
+        dbname:   "%BonnePoire%"
         user:     "%database_user%"
         password: "%database_password%"
         charset:  UTF8

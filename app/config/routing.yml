@@ -1,3 +1,7 @@
+fruit_post:
+    resource: "@FruitBundle/Controller/PostController.php"
+    type:     annotation
+
 fruit:
     resource: "@FruitBundle/Resources/config/routing.yml"
     prefix:   /
