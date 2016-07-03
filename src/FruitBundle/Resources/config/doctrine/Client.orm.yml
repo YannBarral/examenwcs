@@ -1,0 +1,11 @@
+FruitBundle\Entity\Client:
+    type: entity
+    table: null
+    repositoryClass: FruitBundle\Repository\ClientRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }

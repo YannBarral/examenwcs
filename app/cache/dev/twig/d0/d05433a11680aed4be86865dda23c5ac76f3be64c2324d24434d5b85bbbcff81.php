@@ -1,6 +1,6 @@
 <?php
 
-/* TwigBundle:Exception:logs.html.twig */
+/* @Twig/Exception/logs.html.twig */
 class __TwigTemplate_2ad05b6eab0f8a9b0874f6e3b468af6e75dc6e010641e341da06f1b48d9b84b6 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,8 +15,8 @@ class __TwigTemplate_2ad05b6eab0f8a9b0874f6e3b468af6e75dc6e010641e341da06f1b48d9
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_40de008f5bbcf09eaf7f17df0eee14324b95a5bb79e6dd8c5b96c385f8214987 = $this->env->getExtension("native_profiler");
-        $__internal_40de008f5bbcf09eaf7f17df0eee14324b95a5bb79e6dd8c5b96c385f8214987->enter($__internal_40de008f5bbcf09eaf7f17df0eee14324b95a5bb79e6dd8c5b96c385f8214987_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TwigBundle:Exception:logs.html.twig"));
+        $__internal_afd2185a5d643750ef9d2cc13181ac63a05e1ecc8ac9d2be22bd52fad2c0e887 = $this->env->getExtension("native_profiler");
+        $__internal_afd2185a5d643750ef9d2cc13181ac63a05e1ecc8ac9d2be22bd52fad2c0e887->enter($__internal_afd2185a5d643750ef9d2cc13181ac63a05e1ecc8ac9d2be22bd52fad2c0e887_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/logs.html.twig"));
 
         // line 1
         echo "<ol class=\"traces logs\">
@@ -49,13 +49,13 @@ class __TwigTemplate_2ad05b6eab0f8a9b0874f6e3b468af6e75dc6e010641e341da06f1b48d9
         echo "</ol>
 ";
         
-        $__internal_40de008f5bbcf09eaf7f17df0eee14324b95a5bb79e6dd8c5b96c385f8214987->leave($__internal_40de008f5bbcf09eaf7f17df0eee14324b95a5bb79e6dd8c5b96c385f8214987_prof);
+        $__internal_afd2185a5d643750ef9d2cc13181ac63a05e1ecc8ac9d2be22bd52fad2c0e887->leave($__internal_afd2185a5d643750ef9d2cc13181ac63a05e1ecc8ac9d2be22bd52fad2c0e887_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "TwigBundle:Exception:logs.html.twig";
+        return "@Twig/Exception/logs.html.twig";
     }
 
     public function isTraitable()

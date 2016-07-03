@@ -113,4 +113,8 @@
   'WebProfilerBundle:Profiler:profiler.css.twig' => '/var/www/html/examenwcs/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/profiler.css.twig',
   '::base.html.twig' => '/var/www/html/examenwcs/app/Resources/views/base.html.twig',
   ':default:index.html.twig' => '/var/www/html/examenwcs/app/Resources/views/default/index.html.twig',
+  ':post:edit.html.twig' => '/var/www/html/examenwcs/app/Resources/views/post/edit.html.twig',
+  ':post:index.html.twig' => '/var/www/html/examenwcs/app/Resources/views/post/index.html.twig',
+  ':post:new.html.twig' => '/var/www/html/examenwcs/app/Resources/views/post/new.html.twig',
+  ':post:show.html.twig' => '/var/www/html/examenwcs/app/Resources/views/post/show.html.twig',
 );

@@ -105,6 +105,130 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        if (0 === strpos($pathinfo, '/post')) {
+            // post_index
+            if (rtrim($pathinfo, '/') === '/post') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_post_index;
+                }
+
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'post_index');
+                }
+
+                return array (  '_controller' => 'FruitBundle\\Controller\\PostController::indexAction',  '_route' => 'post_index',);
+            }
+            not_post_index:
+
+            // post_new
+            if ($pathinfo === '/post/new') {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not_post_new;
+                }
+
+                return array (  '_controller' => 'FruitBundle\\Controller\\PostController::newAction',  '_route' => 'post_new',);
+            }
+            not_post_new:
+
+            // post_show
+            if (preg_match('#^/post/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_post_show;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'post_show')), array (  '_controller' => 'FruitBundle\\Controller\\PostController::showAction',));
+            }
+            not_post_show:
+
+            // post_edit
+            if (preg_match('#^/post/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not_post_edit;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'post_edit')), array (  '_controller' => 'FruitBundle\\Controller\\PostController::editAction',));
+            }
+            not_post_edit:
+
+            // post_delete
+            if (preg_match('#^/post/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                if ($this->context->getMethod() != 'DELETE') {
+                    $allow[] = 'DELETE';
+                    goto not_post_delete;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'post_delete')), array (  '_controller' => 'FruitBundle\\Controller\\PostController::deleteAction',));
+            }
+            not_post_delete:
+
+        }
+
+        if (0 === strpos($pathinfo, '/client')) {
+            // client_index
+            if (rtrim($pathinfo, '/') === '/client') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_client_index;
+                }
+
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'client_index');
+                }
+
+                return array (  '_controller' => 'FruitBundle\\Controller\\ClientController::indexAction',  '_route' => 'client_index',);
+            }
+            not_client_index:
+
+            // client_show
+            if (preg_match('#^/client/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_client_show;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'client_show')), array (  '_controller' => 'FruitBundle\\Controller\\ClientController::showAction',));
+            }
+            not_client_show:
+
+            // client_new
+            if ($pathinfo === '/client/new') {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not_client_new;
+                }
+
+                return array (  '_controller' => 'FruitBundle\\Controller\\ClientController::newAction',  '_route' => 'client_new',);
+            }
+            not_client_new:
+
+            // client_edit
+            if (preg_match('#^/client/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not_client_edit;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'client_edit')), array (  '_controller' => 'FruitBundle\\Controller\\ClientController::editAction',));
+            }
+            not_client_edit:
+
+            // client_delete
+            if (preg_match('#^/client/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                if ($this->context->getMethod() != 'DELETE') {
+                    $allow[] = 'DELETE';
+                    goto not_client_delete;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'client_delete')), array (  '_controller' => 'FruitBundle\\Controller\\ClientController::deleteAction',));
+            }
+            not_client_delete:
+
+        }
+
         // rag_home
         if ($pathinfo === '/page') {
             return array (  '_controller' => 'FruitBundle\\Controller\\FirstController::indexAction',  '_route' => 'rag_home',);

@@ -1,3 +1,7 @@
+fruit_client:
+    resource: "@FruitBundle/Resources/config/routing/client.yml"
+    prefix:   /client
+
 rag_home:
     path:      /page
     defaults:  { _controller: FruitBundle:First:index }

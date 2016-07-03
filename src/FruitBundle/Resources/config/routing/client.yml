@@ -1,0 +1,24 @@
+client_index:
+    path:     /
+    defaults: { _controller: "FruitBundle:Client:index" }
+    methods:  GET
+
+client_show:
+    path:     /{id}/show
+    defaults: { _controller: "FruitBundle:Client:show" }
+    methods:  GET
+
+client_new:
+    path:     /new
+    defaults: { _controller: "FruitBundle:Client:new" }
+    methods:  [GET, POST]
+
+client_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "FruitBundle:Client:edit" }
+    methods:  [GET, POST]
+
+client_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "FruitBundle:Client:delete" }
+    methods:  DELETE

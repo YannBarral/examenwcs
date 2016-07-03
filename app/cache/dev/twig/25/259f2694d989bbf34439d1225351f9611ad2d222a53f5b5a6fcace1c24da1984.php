@@ -15,14 +15,14 @@ class __TwigTemplate_f4abd79de0efed67a6c4a99d3c7931fb78f50087219a3142d716e8688fc
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b25b0ab672ba7f90bc7f5a31a87c7ee47280b168c6b14b3797068243b5c990eb = $this->env->getExtension("native_profiler");
-        $__internal_b25b0ab672ba7f90bc7f5a31a87c7ee47280b168c6b14b3797068243b5c990eb->enter($__internal_b25b0ab672ba7f90bc7f5a31a87c7ee47280b168c6b14b3797068243b5c990eb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FruitBundle:Default:index.html.twig"));
+        $__internal_30c3cca2522dc6f5bff93d9b80ab0438d2e2a3ee2a49d81cbf7624b15a49a40c = $this->env->getExtension("native_profiler");
+        $__internal_30c3cca2522dc6f5bff93d9b80ab0438d2e2a3ee2a49d81cbf7624b15a49a40c->enter($__internal_30c3cca2522dc6f5bff93d9b80ab0438d2e2a3ee2a49d81cbf7624b15a49a40c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FruitBundle:Default:index.html.twig"));
 
         // line 1
         echo "Hello World!
 ";
         
-        $__internal_b25b0ab672ba7f90bc7f5a31a87c7ee47280b168c6b14b3797068243b5c990eb->leave($__internal_b25b0ab672ba7f90bc7f5a31a87c7ee47280b168c6b14b3797068243b5c990eb_prof);
+        $__internal_30c3cca2522dc6f5bff93d9b80ab0438d2e2a3ee2a49d81cbf7624b15a49a40c->leave($__internal_30c3cca2522dc6f5bff93d9b80ab0438d2e2a3ee2a49d81cbf7624b15a49a40c_prof);
 
     }
 

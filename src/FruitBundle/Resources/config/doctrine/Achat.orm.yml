@@ -1,0 +1,11 @@
+FruitBundle\Entity\Achat:
+    type: entity
+    table: null
+    repositoryClass: FruitBundle\Repository\AchatRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }

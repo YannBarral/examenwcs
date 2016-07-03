@@ -26,7 +26,7 @@
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
     <parameter key="database_host">127.0.0.1</parameter>
     <parameter key="database_port">null</parameter>
-    <parameter key="database_name">BonnePoire</parameter>
+    <parameter key="database_name">bonnepoire</parameter>
     <parameter key="database_user">root</parameter>
     <parameter key="database_password">root</parameter>
     <parameter key="mailer_transport">smtp</parameter>
@@ -1771,7 +1771,7 @@
       <argument type="collection">
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>57714b30474649.04600513</argument>
+            <argument>5779534c0a3c12.13342319</argument>
           </service>
         </argument>
       </argument>
@@ -1900,7 +1900,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>57714b30474649.04600513</argument>
+            <argument>5779534c0a3c12.13342319</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2218,7 +2218,7 @@
         <argument key="driver">pdo_mysql</argument>
         <argument key="host">127.0.0.1</argument>
         <argument key="port">null</argument>
-        <argument key="dbname">BonnePoire</argument>
+        <argument key="dbname">bonnepoire</argument>
         <argument key="user">root</argument>
         <argument key="password">root</argument>
         <argument key="charset">UTF8</argument>
@@ -2314,11 +2314,13 @@
               <service class="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain" public="false">
                 <call method="addDriver">
                   <argument type="service">
-                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
-                      <argument type="service" id="annotation_reader"/>
+                    <service class="Doctrine\ORM\Mapping\Driver\SimplifiedYamlDriver" public="false">
                       <argument type="collection">
-                        <argument>/var/www/html/examenwcs/src/FruitBundle/Entity</argument>
+                        <argument key="/var/www/html/examenwcs/src/FruitBundle/Resources/config/doctrine">FruitBundle\Entity</argument>
                       </argument>
+                      <call method="setGlobalBasename">
+                        <argument>mapping</argument>
+                      </call>
                     </service>
                   </argument>
                   <argument>FruitBundle\Entity</argument>
