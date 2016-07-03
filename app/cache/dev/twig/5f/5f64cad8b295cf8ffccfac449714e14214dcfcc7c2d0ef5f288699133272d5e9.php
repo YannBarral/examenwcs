@@ -15,8 +15,8 @@ class __TwigTemplate_c30ff7836d6e537af33eba224fa9ef6bd861ec508f6ae555393992c0a06
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_5e503c28404e419f1a6e0e953137560880d28718a4c52e338a1b045c6f11d351 = $this->env->getExtension("native_profiler");
-        $__internal_5e503c28404e419f1a6e0e953137560880d28718a4c52e338a1b045c6f11d351->enter($__internal_5e503c28404e419f1a6e0e953137560880d28718a4c52e338a1b045c6f11d351_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/base_js.html.twig"));
+        $__internal_89135955b0b1c647ba658852cccf2891a3dbfd7ecdc8580f6b260b173ef45d7c = $this->env->getExtension("native_profiler");
+        $__internal_89135955b0b1c647ba658852cccf2891a3dbfd7ecdc8580f6b260b173ef45d7c->enter($__internal_89135955b0b1c647ba658852cccf2891a3dbfd7ecdc8580f6b260b173ef45d7c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/base_js.html.twig"));
 
         // line 1
         echo "<script>/*<![CDATA[*/
@@ -231,7 +231,7 @@ class __TwigTemplate_c30ff7836d6e537af33eba224fa9ef6bd861ec508f6ae555393992c0a06
         var addEventListener;
 
         var el = document.createElement('div');
-        if (!'addEventListener' in el) {
+        if (!('addEventListener' in el)) {
             addEventListener = function (element, eventName, callback) {
                 element.attachEvent('on' + eventName, callback);
             };
@@ -488,7 +488,7 @@ class __TwigTemplate_c30ff7836d6e537af33eba224fa9ef6bd861ec508f6ae555393992c0a06
 /*]]>*/</script>
 ";
         
-        $__internal_5e503c28404e419f1a6e0e953137560880d28718a4c52e338a1b045c6f11d351->leave($__internal_5e503c28404e419f1a6e0e953137560880d28718a4c52e338a1b045c6f11d351_prof);
+        $__internal_89135955b0b1c647ba658852cccf2891a3dbfd7ecdc8580f6b260b173ef45d7c->leave($__internal_89135955b0b1c647ba658852cccf2891a3dbfd7ecdc8580f6b260b173ef45d7c_prof);
 
     }
 
@@ -720,7 +720,7 @@ class __TwigTemplate_c30ff7836d6e537af33eba224fa9ef6bd861ec508f6ae555393992c0a06
 /*         var addEventListener;*/
 /* */
 /*         var el = document.createElement('div');*/
-/*         if (!'addEventListener' in el) {*/
+/*         if (!('addEventListener' in el)) {*/
 /*             addEventListener = function (element, eventName, callback) {*/
 /*                 element.attachEvent('on' + eventName, callback);*/
 /*             };*/

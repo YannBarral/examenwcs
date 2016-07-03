@@ -15,8 +15,8 @@ class __TwigTemplate_7dfe431f02534bf71b311d5c67fb770b1c4dd3858ddd2c0ee240b37d1a6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d07045605bb872db90d9195dc5594864f6e1ba7876dadc089fff3293e059493f = $this->env->getExtension("native_profiler");
-        $__internal_d07045605bb872db90d9195dc5594864f6e1ba7876dadc089fff3293e059493f->enter($__internal_d07045605bb872db90d9195dc5594864f6e1ba7876dadc089fff3293e059493f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/choice_widget_options.html.php"));
+        $__internal_59821cc0b89917eb7fee2af5f1107b88f1d47959e9a017aad23c77448562e311 = $this->env->getExtension("native_profiler");
+        $__internal_59821cc0b89917eb7fee2af5f1107b88f1d47959e9a017aad23c77448562e311->enter($__internal_59821cc0b89917eb7fee2af5f1107b88f1d47959e9a017aad23c77448562e311_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/choice_widget_options.html.php"));
 
         // line 1
         echo "<?php use Symfony\\Component\\Form\\ChoiceList\\View\\ChoiceGroupView;
@@ -29,12 +29,12 @@ class __TwigTemplate_7dfe431f02534bf71b311d5c67fb770b1c4dd3858ddd2c0ee240b37d1a6
             <?php echo \$formHelper->block(\$form, 'choice_widget_options', array('choices' => \$choice)) ?>
         </optgroup>
     <?php else: ?>
-        <option value=\"<?php echo \$view->escape(\$choice->value) ?>\" <?php echo \$view['form']->block(\$form, 'attributes', array('attr' => \$choice->attr)) ?><?php if (\$is_selected(\$choice->value, \$value)): ?> selected=\"selected\"<?php endif?>><?php echo \$view->escape(false !== \$choice_translation_domain ? \$translatorHelper->trans(\$choice->label, array(), \$choice_translation_domain) : \$choice->label) ?></option>
+        <option value=\"<?php echo \$view->escape(\$choice->value) ?>\" <?php echo \$formHelper->block(\$form, 'choice_attributes', array('choice_attr' => \$choice->attr)) ?><?php if (\$is_selected(\$choice->value, \$value)): ?> selected=\"selected\"<?php endif?>><?php echo \$view->escape(false !== \$choice_translation_domain ? \$translatorHelper->trans(\$choice->label, array(), \$choice_translation_domain) : \$choice->label) ?></option>
     <?php endif ?>
 <?php endforeach ?>
 ";
         
-        $__internal_d07045605bb872db90d9195dc5594864f6e1ba7876dadc089fff3293e059493f->leave($__internal_d07045605bb872db90d9195dc5594864f6e1ba7876dadc089fff3293e059493f_prof);
+        $__internal_59821cc0b89917eb7fee2af5f1107b88f1d47959e9a017aad23c77448562e311->leave($__internal_59821cc0b89917eb7fee2af5f1107b88f1d47959e9a017aad23c77448562e311_prof);
 
     }
 
@@ -58,7 +58,7 @@ class __TwigTemplate_7dfe431f02534bf71b311d5c67fb770b1c4dd3858ddd2c0ee240b37d1a6
 /*             <?php echo $formHelper->block($form, 'choice_widget_options', array('choices' => $choice)) ?>*/
 /*         </optgroup>*/
 /*     <?php else: ?>*/
-/*         <option value="<?php echo $view->escape($choice->value) ?>" <?php echo $view['form']->block($form, 'attributes', array('attr' => $choice->attr)) ?><?php if ($is_selected($choice->value, $value)): ?> selected="selected"<?php endif?>><?php echo $view->escape(false !== $choice_translation_domain ? $translatorHelper->trans($choice->label, array(), $choice_translation_domain) : $choice->label) ?></option>*/
+/*         <option value="<?php echo $view->escape($choice->value) ?>" <?php echo $formHelper->block($form, 'choice_attributes', array('choice_attr' => $choice->attr)) ?><?php if ($is_selected($choice->value, $value)): ?> selected="selected"<?php endif?>><?php echo $view->escape(false !== $choice_translation_domain ? $translatorHelper->trans($choice->label, array(), $choice_translation_domain) : $choice->label) ?></option>*/
 /*     <?php endif ?>*/
 /* <?php endforeach ?>*/
 /* */
