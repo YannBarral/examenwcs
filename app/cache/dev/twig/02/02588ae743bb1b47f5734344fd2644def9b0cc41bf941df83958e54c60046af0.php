@@ -18,8 +18,8 @@ class __TwigTemplate_6383e8b87d55a0cbd8cde5855ee4b90d46e046da5150902775f0f98b2e4
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_69ff8ad7a235f6d9b35953d907898bc4aa934655a9e5eef345bc5679d78cdc90 = $this->env->getExtension("native_profiler");
-        $__internal_69ff8ad7a235f6d9b35953d907898bc4aa934655a9e5eef345bc5679d78cdc90->enter($__internal_69ff8ad7a235f6d9b35953d907898bc4aa934655a9e5eef345bc5679d78cdc90_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_7940a67c16d22e66298836fe90fa005882beddbc94e407d14f8eb596a091cf5e = $this->env->getExtension("native_profiler");
+        $__internal_7940a67c16d22e66298836fe90fa005882beddbc94e407d14f8eb596a091cf5e->enter($__internal_7940a67c16d22e66298836fe90fa005882beddbc94e407d14f8eb596a091cf5e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -35,13 +35,12 @@ class __TwigTemplate_6383e8b87d55a0cbd8cde5855ee4b90d46e046da5150902775f0f98b2e4
         // line 7
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("favicon.ico"), "html", null, true);
         echo "\" />
-    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\">
-    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css\">
+
 
     ";
-        // line 11
+        // line 10
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 14
+        // line 15
         echo "
     <style>
         form[action\$=new],
@@ -59,11 +58,11 @@ class __TwigTemplate_6383e8b87d55a0cbd8cde5855ee4b90d46e046da5150902775f0f98b2e4
 <nav class=\"navbar navbar-inverse\">
     <div class=\"container-fluid\">
         <div class=\"navbar-header\">
-            <a class=\"navbar-brand\" href=\"/\">Bonne poire </br> Les fruits, c'est la vie !!!</a>
+            <a class=\"navbar-brand\" href=\"/\">Bonne Poire </br> Les fruits, c'est la vie !!!</a>
         </div>
         <ul class=\"nav navbar-nav\">
 
-            <li><a href=\"/diner)\">Clients</a></li>
+            <li><a href=\"\">Client</a></li>
             <li><a href=\"/personne\">Achat</a></li>
             <li><a href=\"/plat\">Commande</a></li>
 
@@ -73,58 +72,61 @@ class __TwigTemplate_6383e8b87d55a0cbd8cde5855ee4b90d46e046da5150902775f0f98b2e4
     </div>
 </nav>
 ";
-        // line 44
+        // line 45
         $this->displayBlock('body', $context, $blocks);
-        // line 47
+        // line 48
         echo "
 </body>
 </html>
 
 ";
         
-        $__internal_69ff8ad7a235f6d9b35953d907898bc4aa934655a9e5eef345bc5679d78cdc90->leave($__internal_69ff8ad7a235f6d9b35953d907898bc4aa934655a9e5eef345bc5679d78cdc90_prof);
+        $__internal_7940a67c16d22e66298836fe90fa005882beddbc94e407d14f8eb596a091cf5e->leave($__internal_7940a67c16d22e66298836fe90fa005882beddbc94e407d14f8eb596a091cf5e_prof);
 
     }
 
     // line 6
     public function block_title($context, array $blocks = array())
     {
-        $__internal_78338024ff6651b2f6ca9aada12480ff912689679dda30ddd9c395d5a5f8ed9b = $this->env->getExtension("native_profiler");
-        $__internal_78338024ff6651b2f6ca9aada12480ff912689679dda30ddd9c395d5a5f8ed9b->enter($__internal_78338024ff6651b2f6ca9aada12480ff912689679dda30ddd9c395d5a5f8ed9b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_7d28e126c7eeb32e7b9da69468004c62e7183901b9f349a8d381cbf163f4e5d1 = $this->env->getExtension("native_profiler");
+        $__internal_7d28e126c7eeb32e7b9da69468004c62e7183901b9f349a8d381cbf163f4e5d1->enter($__internal_7d28e126c7eeb32e7b9da69468004c62e7183901b9f349a8d381cbf163f4e5d1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Bonne Poire";
         
-        $__internal_78338024ff6651b2f6ca9aada12480ff912689679dda30ddd9c395d5a5f8ed9b->leave($__internal_78338024ff6651b2f6ca9aada12480ff912689679dda30ddd9c395d5a5f8ed9b_prof);
+        $__internal_7d28e126c7eeb32e7b9da69468004c62e7183901b9f349a8d381cbf163f4e5d1->leave($__internal_7d28e126c7eeb32e7b9da69468004c62e7183901b9f349a8d381cbf163f4e5d1_prof);
 
     }
 
-    // line 11
+    // line 10
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_ee51d59e7fa2439647332465303bb8ce8ce7827b0305d6e17bc9ba6a30c351d4 = $this->env->getExtension("native_profiler");
-        $__internal_ee51d59e7fa2439647332465303bb8ce8ce7827b0305d6e17bc9ba6a30c351d4->enter($__internal_ee51d59e7fa2439647332465303bb8ce8ce7827b0305d6e17bc9ba6a30c351d4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_3f3f82566d5a5bfc57678b905f2f22751243df88baa2a4c7160dcbb6fd10ff3e = $this->env->getExtension("native_profiler");
+        $__internal_3f3f82566d5a5bfc57678b905f2f22751243df88baa2a4c7160dcbb6fd10ff3e->enter($__internal_3f3f82566d5a5bfc57678b905f2f22751243df88baa2a4c7160dcbb6fd10ff3e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 12
-        echo "        <link rel=\"stylesheet\" href=\"";
+        // line 11
+        echo "        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\">
+        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css\">
+        <link rel=\"stylesheet\" href=\"";
+        // line 13
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/framework/css/style.css"), "html", null, true);
         echo "\" type=\"text/css\" >
     ";
         
-        $__internal_ee51d59e7fa2439647332465303bb8ce8ce7827b0305d6e17bc9ba6a30c351d4->leave($__internal_ee51d59e7fa2439647332465303bb8ce8ce7827b0305d6e17bc9ba6a30c351d4_prof);
+        $__internal_3f3f82566d5a5bfc57678b905f2f22751243df88baa2a4c7160dcbb6fd10ff3e->leave($__internal_3f3f82566d5a5bfc57678b905f2f22751243df88baa2a4c7160dcbb6fd10ff3e_prof);
 
     }
 
-    // line 44
+    // line 45
     public function block_body($context, array $blocks = array())
     {
-        $__internal_811494439872de37f8ebfe275a6a66985692fb3b69edce9ff8db9608baf794ee = $this->env->getExtension("native_profiler");
-        $__internal_811494439872de37f8ebfe275a6a66985692fb3b69edce9ff8db9608baf794ee->enter($__internal_811494439872de37f8ebfe275a6a66985692fb3b69edce9ff8db9608baf794ee_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_4e96efa148815f9e679ce802d9f85c80c0156a2eb464e51fa52b5cfb143d7d22 = $this->env->getExtension("native_profiler");
+        $__internal_4e96efa148815f9e679ce802d9f85c80c0156a2eb464e51fa52b5cfb143d7d22->enter($__internal_4e96efa148815f9e679ce802d9f85c80c0156a2eb464e51fa52b5cfb143d7d22_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        // line 45
+        // line 46
         echo "
 ";
         
-        $__internal_811494439872de37f8ebfe275a6a66985692fb3b69edce9ff8db9608baf794ee->leave($__internal_811494439872de37f8ebfe275a6a66985692fb3b69edce9ff8db9608baf794ee_prof);
+        $__internal_4e96efa148815f9e679ce802d9f85c80c0156a2eb464e51fa52b5cfb143d7d22->leave($__internal_4e96efa148815f9e679ce802d9f85c80c0156a2eb464e51fa52b5cfb143d7d22_prof);
 
     }
 
@@ -140,7 +142,7 @@ class __TwigTemplate_6383e8b87d55a0cbd8cde5855ee4b90d46e046da5150902775f0f98b2e4
 
     public function getDebugInfo()
     {
-        return array (  124 => 45,  118 => 44,  108 => 12,  102 => 11,  90 => 6,  79 => 47,  77 => 44,  45 => 14,  43 => 11,  36 => 7,  32 => 6,  25 => 1,);
+        return array (  126 => 46,  120 => 45,  111 => 13,  107 => 11,  101 => 10,  89 => 6,  78 => 48,  76 => 45,  44 => 15,  42 => 10,  36 => 7,  32 => 6,  25 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -150,10 +152,11 @@ class __TwigTemplate_6383e8b87d55a0cbd8cde5855ee4b90d46e046da5150902775f0f98b2e4
 /*     <meta charset="UTF-8" />*/
 /*     <title>{% block title %}Bonne Poire{% endblock %}</title>*/
 /*     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />*/
-/*     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">*/
-/*     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">*/
+/* */
 /* */
 /*     {% block stylesheets %}*/
+/*         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">*/
+/*         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">*/
 /*         <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}" type="text/css" >*/
 /*     {% endblock %}*/
 /* */
@@ -173,11 +176,11 @@ class __TwigTemplate_6383e8b87d55a0cbd8cde5855ee4b90d46e046da5150902775f0f98b2e4
 /* <nav class="navbar navbar-inverse">*/
 /*     <div class="container-fluid">*/
 /*         <div class="navbar-header">*/
-/*             <a class="navbar-brand" href="/">Bonne poire </br> Les fruits, c'est la vie !!!</a>*/
+/*             <a class="navbar-brand" href="/">Bonne Poire </br> Les fruits, c'est la vie !!!</a>*/
 /*         </div>*/
 /*         <ul class="nav navbar-nav">*/
 /* */
-/*             <li><a href="/diner)">Clients</a></li>*/
+/*             <li><a href="">Client</a></li>*/
 /*             <li><a href="/personne">Achat</a></li>*/
 /*             <li><a href="/plat">Commande</a></li>*/
 /* */
