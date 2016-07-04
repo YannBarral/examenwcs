@@ -1,3 +1,7 @@
+fruit_achat:
+    resource: "@FruitBundle/Resources/config/routing/achat.yml"
+    prefix:   /achat
+
 fruit_client:
     resource: "@FruitBundle/Resources/config/routing/client.yml"
     prefix:   /client

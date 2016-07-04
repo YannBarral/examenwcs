@@ -21,29 +21,29 @@ class __TwigTemplate_02f1fa3b79eb3c1ad8b78f4685e228380d5ff08c8a9428bf74762135ec7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_340081aca6e77702790b54d3f6e50d842e2dc9b322f06c5afc41786a418245f9 = $this->env->getExtension("native_profiler");
-        $__internal_340081aca6e77702790b54d3f6e50d842e2dc9b322f06c5afc41786a418245f9->enter($__internal_340081aca6e77702790b54d3f6e50d842e2dc9b322f06c5afc41786a418245f9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "client/index.html.twig"));
+        $__internal_d7c4ac4c9467fef5da576007ad4b0f77f14592407d9b16c46a766bcb89a2c72b = $this->env->getExtension("native_profiler");
+        $__internal_d7c4ac4c9467fef5da576007ad4b0f77f14592407d9b16c46a766bcb89a2c72b->enter($__internal_d7c4ac4c9467fef5da576007ad4b0f77f14592407d9b16c46a766bcb89a2c72b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "client/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_340081aca6e77702790b54d3f6e50d842e2dc9b322f06c5afc41786a418245f9->leave($__internal_340081aca6e77702790b54d3f6e50d842e2dc9b322f06c5afc41786a418245f9_prof);
+        $__internal_d7c4ac4c9467fef5da576007ad4b0f77f14592407d9b16c46a766bcb89a2c72b->leave($__internal_d7c4ac4c9467fef5da576007ad4b0f77f14592407d9b16c46a766bcb89a2c72b_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_97f9a305f7a61a0518a80a0bad031db2760dc1c747261801da7f7a38121e1283 = $this->env->getExtension("native_profiler");
-        $__internal_97f9a305f7a61a0518a80a0bad031db2760dc1c747261801da7f7a38121e1283->enter($__internal_97f9a305f7a61a0518a80a0bad031db2760dc1c747261801da7f7a38121e1283_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_98063d14fab92c4b4b861746036f1358efad437ecdedf51f485574153a75e485 = $this->env->getExtension("native_profiler");
+        $__internal_98063d14fab92c4b4b861746036f1358efad437ecdedf51f485574153a75e485->enter($__internal_98063d14fab92c4b4b861746036f1358efad437ecdedf51f485574153a75e485_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
-        echo "    <h1>Client list</h1>
+        echo "    <h1>Liste Client</h1>
 
     <table>
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Actions</th>
+
+
             </tr>
         </thead>
         <tbody>
@@ -66,13 +66,13 @@ class __TwigTemplate_02f1fa3b79eb3c1ad8b78f4685e228380d5ff08c8a9428bf74762135ec7
                             <a href=\"";
             // line 20
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("client_show", array("id" => $this->getAttribute($context["client"], "id", array()))), "html", null, true);
-            echo "\">show</a>
+            echo "\">Montrer</a>
                         </li>
                         <li>
                             <a href=\"";
             // line 23
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("client_edit", array("id" => $this->getAttribute($context["client"], "id", array()))), "html", null, true);
-            echo "\">edit</a>
+            echo "\">Modifier</a>
                         </li>
                     </ul>
                 </td>
@@ -91,12 +91,12 @@ class __TwigTemplate_02f1fa3b79eb3c1ad8b78f4685e228380d5ff08c8a9428bf74762135ec7
             <a href=\"";
         // line 34
         echo $this->env->getExtension('routing')->getPath("client_new");
-        echo "\">Create a new entry</a>
+        echo "\">Créer nouveau client</a>
         </li>
     </ul>
 ";
         
-        $__internal_97f9a305f7a61a0518a80a0bad031db2760dc1c747261801da7f7a38121e1283->leave($__internal_97f9a305f7a61a0518a80a0bad031db2760dc1c747261801da7f7a38121e1283_prof);
+        $__internal_98063d14fab92c4b4b861746036f1358efad437ecdedf51f485574153a75e485->leave($__internal_98063d14fab92c4b4b861746036f1358efad437ecdedf51f485574153a75e485_prof);
 
     }
 
@@ -118,13 +118,13 @@ class __TwigTemplate_02f1fa3b79eb3c1ad8b78f4685e228380d5ff08c8a9428bf74762135ec7
 /* {% extends 'base.html.twig' %}*/
 /* */
 /* {% block body %}*/
-/*     <h1>Client list</h1>*/
+/*     <h1>Liste Client</h1>*/
 /* */
 /*     <table>*/
 /*         <thead>*/
 /*             <tr>*/
-/*                 <th>Id</th>*/
-/*                 <th>Actions</th>*/
+/* */
+/* */
 /*             </tr>*/
 /*         </thead>*/
 /*         <tbody>*/
@@ -134,10 +134,10 @@ class __TwigTemplate_02f1fa3b79eb3c1ad8b78f4685e228380d5ff08c8a9428bf74762135ec7
 /*                 <td>*/
 /*                     <ul>*/
 /*                         <li>*/
-/*                             <a href="{{ path('client_show', { 'id': client.id }) }}">show</a>*/
+/*                             <a href="{{ path('client_show', { 'id': client.id }) }}">Montrer</a>*/
 /*                         </li>*/
 /*                         <li>*/
-/*                             <a href="{{ path('client_edit', { 'id': client.id }) }}">edit</a>*/
+/*                             <a href="{{ path('client_edit', { 'id': client.id }) }}">Modifier</a>*/
 /*                         </li>*/
 /*                     </ul>*/
 /*                 </td>*/
@@ -148,7 +148,7 @@ class __TwigTemplate_02f1fa3b79eb3c1ad8b78f4685e228380d5ff08c8a9428bf74762135ec7
 /* */
 /*     <ul>*/
 /*         <li>*/
-/*             <a href="{{ path('client_new') }}">Create a new entry</a>*/
+/*             <a href="{{ path('client_new') }}">Créer nouveau client</a>*/
 /*         </li>*/
 /*     </ul>*/
 /* {% endblock %}*/

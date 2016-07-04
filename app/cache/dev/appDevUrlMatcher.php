@@ -167,6 +167,68 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        if (0 === strpos($pathinfo, '/achat')) {
+            // achat_index
+            if (rtrim($pathinfo, '/') === '/achat') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_achat_index;
+                }
+
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'achat_index');
+                }
+
+                return array (  '_controller' => 'FruitBundle\\Controller\\AchatController::indexAction',  '_route' => 'achat_index',);
+            }
+            not_achat_index:
+
+            // achat_show
+            if (preg_match('#^/achat/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_achat_show;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'achat_show')), array (  '_controller' => 'FruitBundle\\Controller\\AchatController::showAction',));
+            }
+            not_achat_show:
+
+            // achat_new
+            if ($pathinfo === '/achat/new') {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not_achat_new;
+                }
+
+                return array (  '_controller' => 'FruitBundle\\Controller\\AchatController::newAction',  '_route' => 'achat_new',);
+            }
+            not_achat_new:
+
+            // achat_edit
+            if (preg_match('#^/achat/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not_achat_edit;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'achat_edit')), array (  '_controller' => 'FruitBundle\\Controller\\AchatController::editAction',));
+            }
+            not_achat_edit:
+
+            // achat_delete
+            if (preg_match('#^/achat/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                if ($this->context->getMethod() != 'DELETE') {
+                    $allow[] = 'DELETE';
+                    goto not_achat_delete;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'achat_delete')), array (  '_controller' => 'FruitBundle\\Controller\\AchatController::deleteAction',));
+            }
+            not_achat_delete:
+
+        }
+
         if (0 === strpos($pathinfo, '/client')) {
             // client_index
             if (rtrim($pathinfo, '/') === '/client') {
